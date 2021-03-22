@@ -200,37 +200,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 ## 6. Contributors
 
-This open-source SDK and project is available thanks to the efforts of the following people:
-
-- **Microsoft Research**:
-  - Marah I. Abdin
-  - Patrick Bourke
-  - Piali Choudhury
-  - Jonathan Larson
-  - Shweti Mahajan
-  - Chris White
-  - Weiwei Yang
-
-- **Johns Hopkins University**:
-  - Avanti Athreya
-  - Amitabh Basu
-  - Hayden S. Helm - Helivan Research
-  - Youngser Park
-  - Benjamin Pedigo
-  - Carey Priebe E.
-  - Joshua Vogelstein T.
-
-- **University of Cambridge**:
-  - Albert Cardona
-  - Michael Winding
-  - Marta Zlatic
-
-- **University of Maryland**:
-  - Vince Lyzinski
-
-- **Jataware**:
-  - Ezekiel Barnett
-  - Ben Johnson
+For a list of all the great people who contributed to this project, see [CONTRIBUTORS.md](CONTRIBUTING.md)
 
 ## 7. Legal Notices
 
