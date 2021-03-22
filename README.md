@@ -34,9 +34,10 @@ Learning to rank – producing a ranked list of items specific to a query and wi
       - [4.3.1. Output Modes](#431-output-modes)
       - [4.3.2. Output Layout](#432-output-layout)
   - [5. Contributing](#5-contributing)
-  - [6. Legal Notices](#6-legal-notices)
-    - [6.1. Trademark Notice](#61-trademark-notice)
-    - [6.2 Security Reporting](#62-security-reporting)
+  - [6. Contributors](#6-contributors)
+  - [7. Legal Notices](#7-legal-notices)
+    - [7.1. Trademark Notice](#71-trademark-notice)
+    - [7.2 Security Reporting](#72-security-reporting)
 
 ## 2. Setup
 
@@ -197,16 +198,49 @@ For more information on contributing, see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## 6. Legal Notices
+## 6. Contributors
 
-#### 6.1. Trademark Notice
+This open-source SDK and project is available thanks to the efforts of the following people:
+
+- **Microsoft Research**:
+  - Marah I. Abdin
+  - Patrick Bourke
+  - Piali Choudhury
+  - Jonathan Larson
+  - Shweti Mahajan
+  - Chris White
+  - Weiwei Yang
+
+- **Johns Hopkins University**:
+  - Avanti Athreya
+  - Amitabh Basu
+  - Hayden S. Helm - Helivan Research
+  - Youngser Park
+  - Benjamin Pedigo
+  - Carey Priebe E.
+  - Joshua Vogelstein T.
+
+- **University of Cambridge**:
+  - Albert Cardona
+  - Michael Winding
+  - Marta Zlatic
+
+- **University of Maryland**:
+  - Vince Lyzinski
+
+- **Jataware**:
+  - Ezekiel Barnett
+  - Ben Johnson
+
+## 7. Legal Notices
+
+#### 7.1. Trademark Notice
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
 trademarks or logos is subject to and must follow [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
 
-
-#### 6.2. Security Reporting
+#### 7.2. Security Reporting
 
 For Security Reporting Instructions, see [SECURITY.md](./SECURITY.md).
