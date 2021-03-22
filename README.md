@@ -200,7 +200,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 ## 6. Contributors
 
-For a list of all the great people who contributed to this project, see [CONTRIBUTORS.md](CONTRIBUTING.md)
+For a list of all the great people who contributed to this project, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 ## 7. Legal Notices
 
