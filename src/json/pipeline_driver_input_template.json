@@ -1,0 +1,33 @@
+{
+  "dataset": "test_set",
+  "path_to_root": "../",
+  "path_to_metadata": "../data/test_set_data/metadata.json",
+  "path_to_output": "../output_data/output_test_set/",
+  "num_vois": 5,
+  "training_sets_sizes": [
+    10,
+    15
+  ],
+  "minimum_ranking_thresholds": [
+    null
+  ],
+  "solvers_and_apis": [
+    [
+      "pulp",
+      "coin_cmd"
+    ]
+  ],
+  "weight_approx_resolutions": [
+    null
+  ],
+  "num_cores": 3,
+  "persist_data": true,
+  "mode": "DEBUG",
+  "eval_data_mode": "RANDOM",
+  "training_data_mode": "RANDOM",
+  "gurobi_outputflag": 1,
+  "time_limit": 120,
+  "num_threads": 1,
+  "eval_size": 10,
+  "eval_param": "training_sets_size"
+}

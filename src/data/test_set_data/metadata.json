@@ -1,0 +1,53 @@
+{
+    "voi_indices_file": {
+        "file_pattern": null,
+        "url": "",
+        "path": "../data/test_set_data/metadata/voi_data.csv",
+        "file_type": "csv",
+        "input_format_type": null,
+        "col_of_interest_indx": 0,
+        "header_row": 0,
+        "header": [
+            "voi_id"
+        ],
+        "header_type": [
+            "int"
+        ],
+        "excluded": false
+    },
+    "embeddings_files": [
+        null
+    ],
+    "dist_matrices_files": [
+        {
+            "file_pattern": null,
+            "url": "",
+            "path": "../data/test_set_data/embeddings/distance_matrices.pkl",
+            "file_type": "pkl",
+            "input_format_type": null,
+            "col_of_interest_indx": null,
+            "header_row": null,
+            "header": null,
+            "header_type": null,
+            "excluded": false
+        }
+    ],
+    "testing_data_file": {
+        "file_pattern": null,
+        "url": "",
+        "path": "../data/test_set_data/metadata/voi_data.csv",
+        "file_type": "csv",
+        "input_format_type": "ONE SET",
+        "col_of_interest_indx": 0,
+        "header_row": 0,
+        "header": [
+            "voi_id"
+        ],
+        "header_type": [
+            "int"
+        ],
+        "excluded": false
+    },
+    "eval_data_file": null,
+    "training_data_file": null
+}
