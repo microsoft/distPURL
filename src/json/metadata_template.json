@@ -1,142 +1,53 @@
 {
-    "voi_indices": {
+    "voi_indices_file": {
         "file_pattern": null,
         "url": "",
-        "path": "data/x.csv",
+        "path": "../data/test_set_data/metadata/voi_data.csv",
         "file_type": "csv",
         "input_format_type": null,
-        "col_of_interest_indx": 3,
+        "col_of_interest_indx": 0,
         "header_row": 0,
         "header": [
-            "node_id",
-            "region",
-            "hemisphere"
+            "voi_id"
         ],
         "header_type": [
-            "int",
-            "str",
-            "str"
+            "int"
         ],
         "excluded": false
     },
-    "embeddings_files": [{
-            "file_pattern": "*_bing_*.csv",
-            "url": "",
-            "path": "data/",
-            "file_type": "csv",
-            "input_format_type": null,
-            "col_of_interest_indx": 3,
-            "header_row": 0,
-            "header": null,
-            "header_type": null,
-            "excluded": false
-        },
+    "embeddings_files": [
+        null
+    ],
+    "dist_matrices_files": [
         {
-            "file_pattern": "*_dmri_*.npy",
+            "file_pattern": null,
             "url": "",
-            "path": "data/",
-            "file_type": "csv",
+            "path": "../data/test_set_data/embeddings/distance_matrices.pkl",
+            "file_type": "pkl",
             "input_format_type": null,
             "col_of_interest_indx": null,
             "header_row": null,
             "header": null,
             "header_type": null,
             "excluded": false
-        },
-        {
-            "file_pattern": null,
-            "url": "",
-            "path": "data_special/special_embedding.csv",
-            "file_type": "csv",
-            "input_format_type": null,
-            "col_of_interest_indx": 3,
-            "header_row": 0,
-            "header": [
-                "node_id",
-                "region",
-                "hemisphere"
-            ],
-            "header_type": [
-                "int",
-                "str",
-                "str"
-            ],
-            "excluded": false
-        }],
-    "dist_matrices_files": {
+        }
+    ],
+    "testing_data_file": {
         "file_pattern": null,
         "url": "",
-        "path": "data/x.csv", 
-        "file_type": "csv",
-        "input_format_type": null,
-        "col_of_interest_indx": null,
-        "header_row": 0,
-        "header": [
-            "node_id",
-            "region",
-            "hemisphere"
-        ],
-        "header_type": [
-            "int",
-            "str",
-            "str"
-        ],
-        "excluded": true
-    },
-    "testing_set_file": {
-        "file_pattern": null,
-        "url": "",
-        "path": "data/x.csv",
+        "path": "../data/test_set_data/metadata/voi_data.csv",
         "file_type": "csv",
         "input_format_type": "ONE SET",
-        "col_of_interest_indx": 2,
+        "col_of_interest_indx": 0,
         "header_row": 0,
         "header": [
-            "node_id",
-            "region",
-            "hemisphere"
+            "voi_id"
         ],
         "header_type": [
-            "int",
-            "str",
-            "str"
-        ],
-        "excluded": true
-    },
-    "eval_data_file": {
-        "file_pattern": null,
-        "url": "",
-        "path": "data/x.csv",
-        "file_type": "csv",
-        "input_format_type": "HEADER VOIS",
-        "col_of_interest_indx": null,
-        "header_row": 0,
-        "header": [
-            "node1",
-            "node2",
-            "node3",
-            "node4",
-            "node5"
-        ],
-        "header_type": [
-            "int",
-            "int",
-            "int",
-            "int",
             "int"
         ],
         "excluded": false
     },
-    "training_data_file": {
-        "file_pattern": null,
-        "url": "",
-        "path": "data/x.csv",
-        "file_type": "csv",
-        "input_format_type": "COLUMN VOIS",
-        "col_of_interest_indx": 0,
-        "header_row": null,
-        "header": null,
-        "header_type": null,
-        "excluded": false
-    }
+    "eval_data_file": null,
+    "training_data_file": null
 }

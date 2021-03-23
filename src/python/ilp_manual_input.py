@@ -37,7 +37,7 @@ def input_from_cmd(params: object) -> str:
     input_t = click.prompt('Minimum ranking thresholds (press q when done)')
     params.minimum_ranking_thresholds = []
     while(input_t!='q'):
-        if(input_t is 'None'):
+        if(input_t == 'None'):
             params.minimum_ranking_thresholds.append(None)
         else:
             params.minimum_ranking_thresholds.append(int(input_t))
@@ -53,7 +53,7 @@ def input_from_cmd(params: object) -> str:
     input_v= click.prompt('Weight approximation resolutions (press q when done)')
     params.weight_approx_resolutions = []
     while(input_v!='q'):
-        if(input_v is 'None'):
+        if(input_v == 'None'):
             params.weight_approx_resolutions.append(None)
         else:
             params.weight_approx_resolutions.append(float(input_v))
@@ -64,7 +64,7 @@ def input_from_cmd(params: object) -> str:
     params.num_threads = click.prompt("Number of threads for the optimizer api", default = 25)
     params.gurobi_outputflag = click.prompt("Do you want to receive logging output from optimizer api",default = 1)
     params.eval_size = click.prompt("Evaluation set size",default = 5)
-    params.eval_param = EvalParam(click.promt("Parameter to evaluate relative to", default = 'training_sets_size'))
+    params.eval_param = EvalParam(click.prompt("Parameter to evaluate relative to", default = 'training_sets_size'))
     click.confirm('Do you want to continue?', abort=True)
 
     pipeline_driver_input_path = os.path.join(params.path_to_root, 'src/driver_input_temp',json_file_name)

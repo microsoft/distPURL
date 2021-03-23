@@ -24,7 +24,7 @@ def visulaize_results(path_to_output_data: str, var_param: List[float], results:
     #replace None weight_approx_resolution values with 0
     if None in var_param:
         var_param = np.array(var_param)
-        var_param = np.where(var_param is None, 0.0, var_param)
+        var_param = np.where(var_param == None, 0.0, var_param)
     
     #plot evaluation results
     ax.plot(var_param, np.mean(results, axis=-1), linestyle='--', marker='o')
