@@ -3,7 +3,7 @@
 ### 1. Input Parameter options (these options can be edited in the json template)
 
 The user may choose to modify as many of the input parameters as they wish, any unchanged parameters keep their default value, see [input_params.md](input_params.md), for more details.
-If you want to edit the parameters in place in the JSON file, please edit the sample template: [pipeline_driver_input_template.json](./src/json/pipeline_driver_input_template.json) and use the
+If you want to edit the parameters in place in the JSON file, please edit the sample template: [pipeline_driver_input_template.json](../json/pipeline_driver_input_template.json) and use the
 option --ifile or -i to provide the json file input.
 
 
