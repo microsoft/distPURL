@@ -53,7 +53,7 @@ Getting started...
 ### 2.2. Install
 
 Next, in order to install all needed dependencies before running or testing this SDK.
->Run the bash file [install.sh](./scripts/install.sh).
+>Run the bash file [install.sh](./src/scripts/install.sh).
 
     $ PATH/install.sh
 
@@ -61,11 +61,11 @@ Next, in order to install all needed dependencies before running or testing this
 
     bash: ./install.sh: Permission denied
 
->You will need to change mode first to make the script writable and executable, type the following line in command line before running [install.sh](./scripts/install.sh) again, as explained above:
+>You will need to change mode first to make the script writable and executable, type the following line in command line before running [install.sh](./src/scripts/install.sh) again, as explained above:
 
     $ chmod +x ./install.sh
 
->If your installations failed and you're using a Windows system, this might have caused the line endings in [install.sh](./scripts/install.sh) to be in Windows format ('\n\r'). To convert the line endings to be in the correct Unix format, type the following in command line before running [install.sh](./scripts/install.sh) again, as explained above:
+>If your installations failed and you're using a Windows system, this might have caused the line endings in [install.sh](./src/scripts/install.sh) to be in Windows format ('\n\r'). To convert the line endings to be in the correct Unix format, type the following in command line before running [install.sh](./src/scripts/install.sh) again, as explained above:
 
     `$ sudo sed -i.bak '/\r$//' install.sh`
 
@@ -73,7 +73,7 @@ Next, in order to install all needed dependencies before running or testing this
 
 ### 2.3. Gurobi API License
 
-If you plan on using the Gurobi API, please note that the pip installation used in [install.sh](./scripts/install.sh) includes a limited license that allows you to solve small optimization problems. If you require an academic or evaluation license, you can refer to the [Gurobi's downlaod center](https://www.gurobi.com/downloads/) to obtain a free, unlimited academic license or contact them to obtain an evaluation license.
+If you plan on using the Gurobi API, please note that the pip installation used in [install.sh](./src/scripts/install.sh) includes a limited license that allows you to solve small optimization problems. If you require an academic or evaluation license, you can refer to the [Gurobi's downlaod center](https://www.gurobi.com/downloads/) to obtain a free, unlimited academic license or contact them to obtain an evaluation license.
 
 ### 2.4. Code Dependencies
 <table>
@@ -139,14 +139,14 @@ For a detailed overview of all command line options, please refer to [usage_para
 The following example runs shows how one can test and use the SDK:
 
 #### 3.3.1 Example 1
-> Running a simple run using run ID: "example_1" and an input json file foo.json, for more details on the json structure, see template: [pipeline_driver_input_template.json](./json/pipeline_driver_input_template.json).
+> Running a simple run using run ID: "example_1" and an input json file foo.json, for more details on the json structure, see template: [pipeline_driver_input_template.json](./src/json/pipeline_driver_input_template.json).
 
     $ python3 ilp_pipeline_driver.py --runid example_1 -i <path>/foo.json
 
 #### 3.3.2 Example 2
 >Runnning another example where the run ID, dataset name, root path, metadata path, output path, number of vertices of interest, training set sizes and indices are modified, all other parameters keep their default values. 
 
->We also create JSON file example_2_params.json to maintain a copy of all the parameters for future reruns under [driver_input_temp/](src/driver_input_temp/).
+>We also create JSON file example_2_params.json to maintain a copy of all the parameters for future reruns under driver_input_temp/.
 
     $ python3 ilp_pipeline_driver.py --runid example_2 --dataset Dataset_example2 --root-path ../ --metadata-path ../data/Dataset_example2/metadata.json --output-path ../output_data/output_Dataset_example2/ --num-vois 4 –-training-sets-sizes [10,20,30] --indices [1111,2222,3333] -c example_2_params.json 
 
@@ -172,9 +172,9 @@ For the purposes of testing the SDK, we've included an example [test set](src/da
 
 ### 4.2. Input Parameters
 
-Input parameters are necessary to run the ILP pipeline, the user can choose to modify as many of these parameters as they wish, unchanged parameters keep their default values. These parameters are organized in a json file, that could also serve as an input using parameter options, see template: [pipeline_driver_input_template.json](./json/pipeline_driver_input_template.json).
+Input parameters are necessary to run the ILP pipeline, the user can choose to modify as many of these parameters as they wish, unchanged parameters keep their default values. These parameters are organized in a json file, that could also serve as an input using parameter options, see template: [pipeline_driver_input_template.json](./src/json/pipeline_driver_input_template.json).
 
-For a detailed description of each parameter, refer to [input_params.md](./docs/input_params.md)
+For a detailed description of each parameter, refer to [input_params.md](./src/docs/input_params.md)
 
 ### 4.3. Output Results
 
