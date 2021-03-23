@@ -87,7 +87,7 @@ option --ifile or -i to provide the json file input.
 
 ### 2. JSON file input options
 
-> --create/-c, Create a new file to be saved under [driver_input_temp/](../driver_input_temp/):
+> --create/-c, Create a new file to be saved under driver_input_temp/:
 
 *Note: Make sure to change all the parameters you want first!*
 

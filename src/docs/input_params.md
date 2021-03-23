@@ -1,6 +1,6 @@
 ## Input Parameters for the ILP SDK
 
-#### Below is a detailed description of all input parameters, attributes to the [ILPParams class](./../python/__pycache__/ilp_common_classes.py):
+#### Below is a detailed description of all input parameters, attributes to the [ILPParams class](./../python/ilp_common_classes.py):
 1.	#### dataset
     >
         type: <str>
