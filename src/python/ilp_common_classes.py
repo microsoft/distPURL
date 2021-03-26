@@ -112,7 +112,7 @@ class ILPParams:
         self.path_to_root: str                  = "../../"
         self.path_to_metadata: str              = "../data/test_set_data/metadata.json"
         self.path_to_output: str                = "../output_data/output_test_set/"
-        self.num_vois: int                      = 5
+        self.num_vois: int                      = 1
         self.training_sets_sizes: List[int]     = [10,15]
         self.minimum_ranking_thresholds: List   = [None]
         self.solvers_and_apis: List             = [["pulp","coin_cmd"]]
