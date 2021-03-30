@@ -289,7 +289,7 @@ def get_similar_and_other_nodes(dist_matrix: np.array, key_voi_index: int, simil
 
     return inputs
 
-def combine_representations(voi_experiment: object,  return_new_dists: bool) -> np.array:
+def combine_representations(voi_experiment: object) -> np.array:
     """
     A function to find the dict_lpvariables_embed_weights of optimal linear combination of representations. Returns normalized weight vectors.
     """
@@ -336,13 +336,6 @@ def combine_representations(voi_experiment: object,  return_new_dists: bool) -> 
     #if returned weights vectors are empty
     if alpha_hat[0] is None or len(alpha_hat) == 0:
         return None
-    
-    # Return the new distances when return_new_dists is true.
-    if return_new_dists:
-        if np.sum(alpha_hat == 0) == num_embeddings:
-            return alpha_hat, dist_matrix
-        else:
-            return alpha_hat, np.average(dist_matrix, axis=1, dict_lpvariables_embed_weights=alpha_hat)
   
     else:
         # Normalize

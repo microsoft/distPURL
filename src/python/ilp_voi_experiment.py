@@ -27,7 +27,7 @@ class ILPVoiExperiment:
         Get ILP weight vector result and runtime
         '''
         start_time = time.time()
-        alpha_hat = combine_representations(self, return_new_dists=False)
+        alpha_hat = combine_representations(self)
         elapsed_time = time.time() - start_time
         return {self.hash:(alpha_hat, elapsed_time)}
 
