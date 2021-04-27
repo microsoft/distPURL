@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-This is an SDK that provides the tools necessary to improve ranking by combining distance embeddings using integer linear programming (ILP). This results in a more accurate optimized ranking of nodes relative to a vertix of interest (voi).
+This is an SDK that provides the tools necessary to improve ranking by combining distance embeddings using integer linear programming (ILP; https://arxiv.org/abs/2005.10700). This results in a more accurate optimized ranking of nodes relative to a vertix of interest (voi).
 
 Learning to rank – producing a ranked list of items specific to a query and with respect to a set of supervisory items – is a problem of general interest. The setting we consider is one in which no analytic description of what constitutes a good ranking is available. Instead, we have a collection of representations and supervisory information consisting of a (target item, interesting items set) pair. We demonstrate – analytically, in simulation, and in real data examples – that learning to rank via combining representations using an integer linear program (ILP) is effective when the supervision is as light as "these few items are similar to your item of interest." While this nomination task is of general interest, for specificity we present our methodology from the perspective of vertex nomination in graphs.
 
