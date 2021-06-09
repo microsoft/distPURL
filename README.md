@@ -172,7 +172,7 @@ For the purposes of testing the SDK, we've included an example [test set](src/da
 
 ### 4.2. Input Parameters
 
-Input parameters are necessary to run the ILP pipeline, the user can choose to modify as many of these parameters as they wish, unchanged parameters keep their default values. These parameters are organized in a json file, that could also serve as an input using parameter options, see template: [pipeline_driver_input_template.json](./src/json/pipeline_driver_input_template.json).
+Input parameters are necessary to run the ILP pipeline, the user can choose to modify as many of these parameters as they wish. Unchanged parameters keep their default values. These parameters are organized in a json file, that could also serve as an input using parameter options, see template: [pipeline_driver_input_template.json](./src/json/pipeline_driver_input_template.json).
 
 For a detailed description of each parameter, refer to [input_params.md](./src/docs/input_params.md)
 
